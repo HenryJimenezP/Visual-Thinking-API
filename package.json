@@ -1,0 +1,22 @@
+{
+  "name": "visual-thinking-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HenryJimenezP/Visual-Thinking-API.git"
+  },
+  "author": "Henry Jimenez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HenryJimenezP/Visual-Thinking-API/issues"
+  },
+  "homepage": "https://github.com/HenryJimenezP/Visual-Thinking-API#readme",
+  "devDependencies": {
+    "jest": "^28.0.3"
+  }
+}
