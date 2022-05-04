@@ -13,4 +13,10 @@ describe("Tests para VisualPartnerService", () => {
         const partnersByCertification = VisualPartnerService.getFilterByCertification(partners);
         expect(partnersByCertification.length).toBe(3);
     });
+
+    test("Prueba 3: Consultar todos los estudiantes que tengan credits mayor a 500", () => {
+        const partners = Reader.readJsonFile("test/data/visualpartnersTest.json")
+        const partnerCredits = VisualPartnerService.getfilterByCredits(partners);
+        expect(partnerCredits.length).toBe(2);
+    });
 })
