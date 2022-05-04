@@ -7,4 +7,10 @@ describe("Tests para VisualPartnerService", () => {
         const studentsTotal = VisualPartnerService.getStudensByVisual(partners);
         expect(studentsTotal.length).toBe(3)
     });
+
+    test("Prueba 2: Consultar los estudiantes con certificación", () => {
+        const partners = Reader.readJsonFile("test/data/visualpartnersTest.json")
+        const partnersByCertification = VisualPartnerService.getFilterByCertification(partners);
+        expect(partnersByCertification.length).toBe(3);
+    });
 })
