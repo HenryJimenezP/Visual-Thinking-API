@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest"
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest",
+    "linter": "node ./node_modules/eslint/bin/eslint.js",
+    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix",
+    "server": "node ./lib/server.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +20,10 @@
   },
   "homepage": "https://github.com/HenryJimenezP/Visual-Thinking-API#readme",
   "devDependencies": {
+    "eslint": "^8.14.0",
     "jest": "^27.5.1"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
   }
 }
